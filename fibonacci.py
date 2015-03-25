@@ -3,7 +3,7 @@
 def fibonacci():
 	a, b = 0, 1
 	while True:
-		yield a
+		yield a #keyword yield the same in php
 		a, b = b, a + b
 
 f = fibonacci()
