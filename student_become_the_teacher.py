@@ -24,3 +24,15 @@ for student in students:
     print student["homework"]
     print student["quizzes"]
     print student["tests"]
+
+# Add your function below!
+def average(numbers):
+    total = sum(numbers)
+    div = float(total) / len(numbers)
+    return div
+def get_average(student):
+    homework = average(student["homework"])
+    quizzes = average(student["quizzes"])
+    tests = average(student["tests"])
+    total = 0.1 * homework + 0.3 * quizzes + 0.6 * tests
+    return total
