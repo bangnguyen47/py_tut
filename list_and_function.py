@@ -1,4 +1,5 @@
-n = [1, 3, 5]
-# Remove the first item in the list here
-n.pop(0)
-print n
+def list_function(x):
+    return x
+
+n = [3, 5, 7]
+print list_function(n)
