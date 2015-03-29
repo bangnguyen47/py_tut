@@ -30,9 +30,24 @@ def average(numbers):
     total = sum(numbers)
     div = float(total) / len(numbers)
     return div
+    
 def get_average(student):
     homework = average(student["homework"])
     quizzes = average(student["quizzes"])
     tests = average(student["tests"])
     total = 0.1 * homework + 0.3 * quizzes + 0.6 * tests
     return total
+
+def get_letter_grade(score):
+    if score >= 90:
+        return "A"
+    elif score >= 80:
+        return "B"
+    elif score >= 70:
+        return "C"
+    elif score >= 60:
+        return "D"
+    else:
+        return "F"
+test = get_letter_grade(get_average(lloyd))
+print test
