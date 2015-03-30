@@ -15,6 +15,6 @@ for i in range(0, 5):
 #Define print_board function    
 def print_board(board):
     for item in board:
-        print item
+        print " " .join(item)
 
 print_board(board)
