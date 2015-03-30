@@ -4,6 +4,9 @@ In this project you will build a simplified, one-player version of the classic b
 In this version of the game, there will be a single ship hidden in a random location on a 5x5 grid.
 The player will have 10 guesses to try to sink the ship.
 """
+
+from random import randint
+
 #Board
 board = []
 
@@ -26,5 +29,6 @@ def random_col(board):
     col = randint(0, len(board) - 1)
     return col
 
-random_row(board)
-random_col(board)
+# Input row, col
+guess_row = int(raw_input("Guess Row: "))
+guess_col = int(raw_input("Guess Col: "))
